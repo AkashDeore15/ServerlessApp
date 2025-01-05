@@ -1,0 +1,65 @@
+1.Angular is component based language.
+2. In the angular project for the different functionalities we create the different
+components.
+3.When we create the angular project by default 1 component is created with name as "App"
+component.
+
+4.Every component by default contains 4 files
+    .ts file(logic file)
+    .html file(view file)
+    .css file(style file)
+    .spec.ts file (testing file)
+
+5. When we create the class and we want to amke that class as component class 
+then we have to decorate that class with the @component decorator
+6.decorator is like the function which are used to decorate the class/method
+7.Decorator names always starts with @ symbol.
+
+8.Every decorator HAS following metadata
+    1.Selector: The component is identified with the selector. We want to bind with 
+    the selector as tag in the html to call that component.
+    2.templateUrl: Here we specify the html file which we want to bind with the
+    component. It means when we will invoke that component , the htmml file
+    mentioned in the templateUrl will get displayed.
+    3. styleUrl: here we specify the stylesheet file of the component.
+
+10.component is collection of logic and design script.
+11.Logic is implemented in the .ts file and the design script is implemented
+in the .html file.
+12.We bind the logic and design script of component in templateUrl property of 
+@component decorator
+
+13.Install angular as 
+    cd..ng npm install -g @angular/cli
+
+14.To create the angular project we use
+    ng new <project name>
+
+15. To run the Angular project we use
+    ng serve -o
+
+16.component:
+    1.component is collection of logic and design script.
+    2.To create component we use
+        ng generate component <component name>
+    3.When we create the user defined component it creates the folder with the component name.
+    4. This folder will contain 4 files.
+
+17. Data Binding:
+    1.We create data in the class (component) and we print that data on the html
+    2.Flow of data between component and html is called as data binding.
+    3.There are 2 types of data binding
+        1.One way data binding
+        2.Two way data Binding
+    
+    1]One way data binding
+        1)When data flows from component to html or from html to component it is
+        called as one way data binding.
+        2)Event binding is also type of one way data binding.
+        3)In case of event binding the event gets generated on html page and it
+         calls the function inside the component.
+         4)We implement the one way data binding using-
+            1.Interpolation - syntax: {{}}
+            2. property binding -- syntax: [propertyName]
+    
+    2] Two way data binding

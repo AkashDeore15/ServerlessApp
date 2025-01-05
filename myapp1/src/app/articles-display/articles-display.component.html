@@ -1,0 +1,31 @@
+<div>
+    <br>
+    <table  class="table table-hover table-striped border border-2 mt-5">
+        <thead>
+            <tr>
+                <th>Article Id</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Tags</th>
+                <th>Date</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of articles">
+                <td>{{a.id}}</td>
+                <td>{{a.title}}</td>
+                <td>{{a.author}}</td>
+                <td>
+                   <ul *ngFor="let i of a.tags">
+                        <li>{{i}}</li>
+                   </ul>
+                </td>
+                <td>{{a.date}}</td>
+                <td>{{a.rating}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    
+</div>

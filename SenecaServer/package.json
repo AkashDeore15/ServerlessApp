@@ -1,0 +1,16 @@
+{
+  "name": "senecaserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "seneca": "^3.25.0",
+    "seneca-entity": "^16.0.3",
+    "seneca-mongo-store": "^5.0.1"
+  }
+}
